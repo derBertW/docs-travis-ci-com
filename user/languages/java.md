@@ -53,7 +53,7 @@ Before running the build, Travis CI installs dependencies:
 
 ```bash
 mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-```jdk
+```
 
 or if your project uses the `mvnw` wrapper script:
 
