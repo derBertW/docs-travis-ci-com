@@ -20,6 +20,13 @@ To use the Java environment add the following to your `.travis.yml`:
 language: java
 ```
 
+If you want to use a JDK other than the default (Oracle JDK 7) add the option `jdk`:
+
+```yaml
+language: java
+jdk: oraclejdk8
+```
+
 ## Projects Using Maven
 
 ### Default script Command
@@ -46,7 +53,7 @@ Before running the build, Travis CI installs dependencies:
 
 ```bash
 mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-```
+```jdk
 
 or if your project uses the `mvnw` wrapper script:
 
